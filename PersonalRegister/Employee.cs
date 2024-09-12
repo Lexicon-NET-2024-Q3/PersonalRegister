@@ -9,9 +9,9 @@ namespace PersonalRegister
     internal class Employee
     {
         public string Name { get; set; }
-        public int Salary { get; set; }
+        public uint Salary { get; set; }
 
-        public Employee(string name, int salary)
+        public Employee(string name, uint salary)
         {
             Name = name;
             Salary = salary; 
