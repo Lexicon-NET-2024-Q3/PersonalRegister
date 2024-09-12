@@ -12,21 +12,20 @@ namespace PersonalRegister
             SeedData(); 
             do
             {
-                Console.WriteLine("1: Add employee" +
-                    "\n2: Show employees" +
-                    "\nQ: Quit");
+
+                MenuHelpers.ShowMainMenu();
 
                 string input = Console.ReadLine().ToUpper();
 
                 switch (input)
                 {
-                    case "1":
+                    case MenuHelpers.Add:
                         AddEmployee();
                         break;
-                    case "2":
+                    case MenuHelpers.Print:
                         PrintEmployees();
                         break;
-                    case "Q":
+                    case MenuHelpers.Quit:
                         isAlive = false; 
                         break;
                     default:
@@ -39,9 +38,12 @@ namespace PersonalRegister
         private static void AddEmployee()
         {
             string name = Util.AskForString("Name");
-            uint salary = Util.AskForUInt("Salary");            
+            uint salary = Util.AskForUInt("Salary");
 
-            payroll.AddEmployee(name, salary); 
+            //Employee employee = new Employee(name, salary);
+
+            //payroll.AddEmployee(name, salary);
+            payroll.AddEmployee(new Employee(name, salary));
         }
         private static void PrintEmployees()
         {
