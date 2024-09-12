@@ -16,5 +16,10 @@ namespace PersonalRegister
             Name = name;
             Salary = salary; 
         }
+
+        public override string ToString()
+        {
+            return $"Name: {Name} Salary: {Salary}"; 
+        }
     }
 }
