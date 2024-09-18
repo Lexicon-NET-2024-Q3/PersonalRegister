@@ -10,6 +10,7 @@ namespace PersonalRegister
     internal class Main
     {
         private static Payroll payroll = new Payroll();
+        private static ConsoleUI ui = new ConsoleUI(); 
 
         public void Run()
         {
@@ -20,7 +21,7 @@ namespace PersonalRegister
 
                 MenuHelpers.ShowMainMenu();
 
-                string input = Console.ReadLine().ToUpper();
+                string input = ui.GetInput().ToUpper();
 
                 switch (input)
                 {
@@ -57,7 +58,7 @@ namespace PersonalRegister
             foreach (Employee employee in employees)
             {
                 //Console.WriteLine($"Name: {employee.Name} Salary: {employee.Salary}");
-                Console.WriteLine(employee);
+               ui.Print(employee.ToString());
             }
         }
 
