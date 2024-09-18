@@ -5,7 +5,7 @@
 
         public void Print(string message)
         {
-            Console.WriteLine(message);
+            Console.WriteLine($"Message: {message}");
         }
         public string GetInput()
         {

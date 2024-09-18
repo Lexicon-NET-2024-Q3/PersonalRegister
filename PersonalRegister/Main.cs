@@ -14,6 +14,7 @@ namespace PersonalRegister
 
         public void Run()
         {
+
             bool isAlive = true;
             SeedData();
             do
@@ -48,8 +49,9 @@ namespace PersonalRegister
 
             //Employee employee = new Employee(name, salary);
 
-            //payroll.AddEmployee(name, salary);
-            payroll.AddEmployee(new Employee(name, salary));
+            payroll.AddEmployee(name, salary);
+
+            //payroll.AddEmployee(new Employee(name, salary));
         }
         private static void PrintEmployees()
         {
