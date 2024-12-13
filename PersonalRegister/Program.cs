@@ -9,10 +9,11 @@ namespace PersonalRegister
         static void Main(string[] args)
         {
             Main main = new Main();
+                var ui = new ConsoleUI();
             try
             {
-            //Employee emp = new Employee(null, 25);
-            main.Run();
+                //Employee emp = new Employee(null, 25);
+            main.Run(ui);
 
             }
             catch (ArgumentNullException ex)
@@ -32,7 +33,7 @@ namespace PersonalRegister
             }
             finally
             {
-                main.Run(); 
+                main.Run(ui); 
             }
         }     
 

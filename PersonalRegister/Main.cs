@@ -9,12 +9,12 @@ namespace PersonalRegister
 {
     internal class Main
     {
-        private static Payroll payroll = new Payroll();
-        private static ConsoleUI ui = new ConsoleUI(); 
+        private Payroll payroll = new Payroll();
+        private IUI ui; 
 
-        public void Run()
+        public void Run(IUI ui)
         {
-
+            this.ui = ui;
             bool isAlive = true;
             SeedData();
             do
@@ -42,10 +42,10 @@ namespace PersonalRegister
             } while (isAlive);
         }
 
-        private static void AddEmployee()
+        private  void AddEmployee()
         {
-            string name = Util.AskForString("Name");
-            uint salary = Util.AskForUInt("Salary");
+            string name = Util.AskForString("Name", ui);
+            uint salary = Util.AskForUInt("Salary", ui);
 
             //Employee employee = new Employee(name, salary);
 
@@ -53,7 +53,7 @@ namespace PersonalRegister
 
             //payroll.AddEmployee(new Employee(name, salary));
         }
-        private static void PrintEmployees()
+        private  void PrintEmployees()
         {
             IEnumerable<Employee> employees = payroll.GetEmployees();
 
@@ -64,7 +64,7 @@ namespace PersonalRegister
             }
         }
 
-        private static void SeedData()
+        private  void SeedData()
         {
             payroll.AddEmployee("Kalle", 25000);
             payroll.AddEmployee("Anna", 28000);

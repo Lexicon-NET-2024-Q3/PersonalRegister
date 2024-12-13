@@ -1,6 +1,6 @@
 ﻿namespace PersonalRegister
 {
-    public class ConsoleUI
+    public class ConsoleUI : IConsoleUI
     {
 
         public void Print(string message)
@@ -9,7 +9,7 @@
         }
         public string GetInput()
         {
-            return Console.ReadLine(); 
+            return Console.ReadLine();
         }
     }
 }
