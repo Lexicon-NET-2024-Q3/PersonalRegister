@@ -9,7 +9,7 @@ namespace PersonalRegister
         static void Main(string[] args)
         {
             Main main = new Main();
-                var ui = new ConsoleUI();
+                var ui = new MockUI();
             try
             {
                 //Employee emp = new Employee(null, 25);

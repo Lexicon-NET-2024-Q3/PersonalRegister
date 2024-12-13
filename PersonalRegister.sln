@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalRegister.Helpers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalRegister.UI", "PersonalRegister.UI\PersonalRegister.UI.csproj", "{B803EA82-BA7F-4D76-A3FF-4B16463C464D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personal.Tests", "Personal.Tests\Personal.Tests.csproj", "{EBD311EC-21EF-47F0-97D5-16C257C677FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B803EA82-BA7F-4D76-A3FF-4B16463C464D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B803EA82-BA7F-4D76-A3FF-4B16463C464D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B803EA82-BA7F-4D76-A3FF-4B16463C464D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD311EC-21EF-47F0-97D5-16C257C677FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD311EC-21EF-47F0-97D5-16C257C677FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD311EC-21EF-47F0-97D5-16C257C677FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD311EC-21EF-47F0-97D5-16C257C677FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
